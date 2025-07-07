@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: cl.kibernumacademy.services.ContactManagerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.041 s <<< FAILURE! - in cl.kibernumacademy.services.ContactManagerTest
+cl.kibernumacademy.services.ContactManagerTest.agregarContacto_debeAgregarUnContactoALaLista  Time elapsed: 0.022 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	ContactManager cannot be resolved to a type
+	ContactManager cannot be resolved to a type
+	Contact cannot be resolved to a type
+	Contact cannot be resolved to a type
+	The method hasSize(int) is undefined for the type ContactManagerTest
+	The method is(String) is undefined for the type ContactManagerTest
+
+	at cl.kibernumacademy.services.ContactManagerTest.agregarContacto_debeAgregarUnContactoALaLista(ContactManagerTest.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
