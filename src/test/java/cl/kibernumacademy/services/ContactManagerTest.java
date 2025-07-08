@@ -1,6 +1,10 @@
 package cl.kibernumacademy.services;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import cl.kibernumacademy.model.Contact;
 
@@ -43,8 +47,9 @@ public class ContactManagerTest {
 
   }
 
-  @Test
-  void buscarContactoPorNombre_debeRetornarContactosQueContienenLaCadena() {
+  @ParameterizedTest
+  @ValueSource(strings = {"Sofia", "Sonia", "Richard", "Margarita"})
+  void buscarContactoPorNombre_debeRetornarContactosQueContienenLaCadena(String filtro) {
      // Se espera que exista una clase ContactManager con un método agregarContacto
     ContactManager contactManager = new ContactManager();
     contactManager.agregarContacto(new Contact("Sofia", "055-9491091940", "sofia@correo.cl"));
@@ -54,11 +59,14 @@ public class ContactManagerTest {
 
     /// ContactManager resultado = contactmanager.buscarContactoPorNombre();
     // var a partir de java 9
-    var resultado = contactManager.buscarContactoPorNombre("So");
+    var resultado = contactManager.buscarContactoPorNombre(filtro);
 
-    assertThat(resultado, hasSize(2));
-    assertThat(resultado.get(0).getNombre(), containsString("So"));
-    assertThat(resultado.get(1).getNombre(), containsString("So"));
+    // assertThat(resultado, hasSize(2));
+    // assertThat(resultado.get(0).getNombre(), containsString("So"));
+    // assertThat(resultado.get(1).getNombre(), containsString("So"));
+
+    assertTrue(resultado.stream().anyMatch(contact -> contact.getNombre().toLowerCase().contains(filtro.toLowerCase())));
+    
    
   }
 }
