@@ -1,3 +1,4 @@
+```java
 package cl.kibernumacademy.services;
 
 import java.util.ArrayList;
@@ -26,3 +27,5 @@ public class ContactManager {
   }
 
 }
+
+```
