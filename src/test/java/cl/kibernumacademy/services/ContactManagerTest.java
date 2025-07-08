@@ -54,7 +54,7 @@ public class ContactManagerTest {
 
     /// ContactManager resultado = contactmanager.buscarContactoPorNombre();
     // var a partir de java 9
-    var resultado = contactmanager.buscarContactoPorNombre("So");
+    var resultado = contactManager.buscarContactoPorNombre("So");
 
     assertThat(resultado, hasSize(2));
     assertThat(resultado.get(0).getNombre(), containsString("So"));

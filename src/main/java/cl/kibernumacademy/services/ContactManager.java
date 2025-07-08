@@ -28,4 +28,17 @@ public class ContactManager {
     }
   }
 
+  public List<Contact> buscarContactoPorNombre(String cadena) {
+    List<Contact> resultadoBusqueda = new ArrayList<>();
+
+    for(Contact contacto: contactos) {
+      if(contacto.getNombre().contains(cadena)) {
+        resultadoBusqueda.add(contacto);
+      }
+    }
+    return resultadoBusqueda;
+  }
+
+
+
 }

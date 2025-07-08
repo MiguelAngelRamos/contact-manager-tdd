@@ -1,17 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: cl.kibernumacademy.services.ContactManagerTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.053 s <<< FAILURE! - in cl.kibernumacademy.services.ContactManagerTest
-cl.kibernumacademy.services.ContactManagerTest.buscarContactoPorNombre_debeRetornarContactosQueContienenLaCadena  Time elapsed: 0.005 s  <<< ERROR!
-java.lang.Error: 
-Unresolved compilation problems: 
-	contactmanager cannot be resolved
-	The method assertThat(T, Matcher<? super T>) in the type MatcherAssert is not applicable for the arguments (Object, Matcher<Collection<? extends Object>>)
-	The method get(int) is undefined for the type Object
-	The method get(int) is undefined for the type Object
-
-	at cl.kibernumacademy.services.ContactManagerTest.buscarContactoPorNombre_debeRetornarContactosQueContienenLaCadena(ContactManagerTest.java:57)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in cl.kibernumacademy.services.ContactManagerTest
