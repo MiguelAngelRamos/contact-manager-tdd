@@ -42,4 +42,23 @@ public class ContactManagerTest {
     assertThat(contactManager.obtenerContactos(), hasSize(0));
 
   }
+
+  @Test
+  void buscarContactoPorNombre_debeRetornarContactosQueContienenLaCadena() {
+     // Se espera que exista una clase ContactManager con un método agregarContacto
+    ContactManager contactManager = new ContactManager();
+    contactManager.agregarContacto(new Contact("Sofia", "055-9491091940", "sofia@correo.cl"));
+    contactManager.agregarContacto(new Contact("Sonia", "055-9491091940", "sonia@correo.cl"));
+    contactManager.agregarContacto(new Contact("Richard", "055-9445171940", "richard@correo.cl"));
+    contactManager.agregarContacto(new Contact("Margarita", "055-9491091940", "margarita@correo.cl"));
+
+    /// ContactManager resultado = contactmanager.buscarContactoPorNombre();
+    // var a partir de java 9
+    var resultado = contactmanager.buscarContactoPorNombre("So");
+
+    assertThat(resultado, hasSize(2));
+    assertThat(resultado.get(0).getNombre(), containsString("So"));
+    assertThat(resultado.get(1).getNombre(), containsString("So"));
+   
+  }
 }
