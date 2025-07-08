@@ -1,6 +1,7 @@
 package cl.kibernumacademy.services;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import cl.kibernumacademy.model.Contact;
@@ -17,9 +18,11 @@ public class ContactManager {
   }
 
   public void eliminarContactoPorEmail(String email) {
-    for(Contact contacto: contactos) {
+    Iterator<Contact> iterador = contactos.iterator();
+    while(iterador.hasNext()) {
+      Contact contacto = iterador.next();
       if(contacto.getEmail().equals(email)) {
-        contactos.remove(contacto);
+        iterador.remove();
         break;
       }
     }
