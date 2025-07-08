@@ -1,3 +1,4 @@
+```java
 package cl.kibernumacademy.services;
 
 import java.util.ArrayList;
@@ -28,18 +29,19 @@ public class ContactManager {
     }
   }
 
-  public List<Contact> buscarContactoPorNombre(String cadena) {
+  public List<Contact> bbuscarContactoPorNombre(String cadena) {
     List<Contact> resultadoBusqueda = new ArrayList<>();
-    String filtro = cadena.toLowerCase();
+
     for(Contact contacto: contactos) {
-      if(contacto.getNombre().toLowerCase().contains(filtro)) {
+      if(contacto.getNombre().contains(cadena)) {
         resultadoBusqueda.add(contacto);
       }
     }
-    // retornamos una lista inmutable para evitar modificaciones externas
-    return List.copyOf(resultadoBusqueda);
+    return resultadoBusqueda;
   }
 
 
 
 }
+
+```
