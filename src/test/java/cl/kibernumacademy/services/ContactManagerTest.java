@@ -5,7 +5,9 @@ import org.junit.jupiter.api.Test;
 import cl.kibernumacademy.model.Contact;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matcher.*;
+import static org.hamcrest.Matchers.*;
+
+
 public class ContactManagerTest {
   
   @Test

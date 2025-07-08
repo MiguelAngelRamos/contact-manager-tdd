@@ -1,3 +1,4 @@
+```java
 package cl.kibernumacademy.services;
 
 import java.util.ArrayList;
@@ -13,7 +14,8 @@ public class ContactManager {
   }
 
   public List<Contact> obtenerContactos() {
-    return List.copyOf(contactos); // Devuelve una copia inmutable de la lista de contactos
+    return contactos;
   }
 
 }
+```
