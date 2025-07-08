@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: cl.kibernumacademy.services.ContactManagerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in cl.kibernumacademy.services.ContactManagerTest
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.048 s <<< FAILURE! - in cl.kibernumacademy.services.ContactManagerTest
+cl.kibernumacademy.services.ContactManagerTest.eliminarContactoPorEmail_debeEliminarElContactoConEmailDado  Time elapsed: 0.023 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	The method eliminarContactoPorEmail(String) is undefined for the type ContactManager
+
+	at cl.kibernumacademy.services.ContactManagerTest.eliminarContactoPorEmail_debeEliminarElContactoConEmailDado(ContactManagerTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

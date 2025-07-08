@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cl.kibernumacademy.services.ContactManagerTest" time="0.041" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cl.kibernumacademy.services.ContactManagerTest" time="0.048" tests="2" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk17.0.12_7\bin"/>
-    <property name="sun.java.command" value="C:\Users\Miguel\AppData\Local\Temp\surefire15418471995394512670\surefirebooter-20250707201013063_3.jar C:\Users\Miguel\AppData\Local\Temp\surefire15418471995394512670 2025-07-07T20-10-12_738-jvmRun1 surefire-20250707201013063_1tmp surefire_0-20250707201013063_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Miguel\AppData\Local\Temp\surefire9688395937809318620\surefirebooter-20250707202044796_3.jar C:\Users\Miguel\AppData\Local\Temp\surefire9688395937809318620 2025-07-07T20-20-44_405-jvmRun1 surefire-20250707202044796_1tmp surefire_0-20250707202044796_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Miguel\Desktop\tdd\contactos\target\test-classes;C:\Users\Miguel\Desktop\tdd\contactos\target\classes;C:\Users\Miguel\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Miguel\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Miguel\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Miguel\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Miguel\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Miguel\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Miguel\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Miguel\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Miguel\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Miguel\AppData\Local\Temp\surefire15418471995394512670\surefirebooter-20250707201013063_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Miguel\AppData\Local\Temp\surefire9688395937809318620\surefirebooter-20250707202044796_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+7-LTS"/>
@@ -50,12 +50,23 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk17.0.12_7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Amazon Corretto\jdk17.0.12_7\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Apache24\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Users\Miguel\AppData\Local\Android\Sdk\platform-tools;C:\Users\Miguel\AppData\Local\Android\Sdk\emulator;C:\Users\Miguel\AppData\Local\Android\Sdk\tools;C:\Users\Miguel\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\nodejs\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\gradle-8.14.2\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\chocolatey\bin;C:\Users\Miguel\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Miguel\AppData\Local\Programs\Python\Python312\;C:\Users\Miguel\AppData\Local\Microsoft\WindowsApps;C:\Users\Miguel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Miguel\AppData\Roaming\Composer\vendor\bin;C:\Users\Miguel\.dotnet\tools;C:\Program Files\JetBrains\PhpStorm 2024.2.3\bin;;C:\Users\Miguel\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.4\bin;;C:\flutter\bin;C:\maven\bin;;c:\Users\Miguel\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Miguel\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk17.0.12_7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Amazon Corretto\jdk17.0.12_7\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Apache24\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Users\Miguel\AppData\Local\Android\Sdk\platform-tools;C:\Users\Miguel\AppData\Local\Android\Sdk\emulator;C:\Users\Miguel\AppData\Local\Android\Sdk\tools;C:\Users\Miguel\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\nodejs\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\gradle-8.14.2\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\chocolatey\bin;C:\Users\Miguel\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Miguel\AppData\Local\Programs\Python\Python312\;C:\Users\Miguel\AppData\Local\Microsoft\WindowsApps;C:\Users\Miguel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Miguel\AppData\Roaming\Composer\vendor\bin;C:\Users\Miguel\.dotnet\tools;C:\Program Files\JetBrains\PhpStorm 2024.2.3\bin;;C:\Users\Miguel\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.4\bin;;C:\flutter\bin;C:\maven\bin;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Amazon.com Inc."/>
     <property name="java.vm.version" value="17.0.12+7-LTS"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="agregarContacto_debeAgregarUnContactoALaLista" classname="cl.kibernumacademy.services.ContactManagerTest" time="0.025"/>
+  <testcase name="eliminarContactoPorEmail_debeEliminarElContactoConEmailDado" classname="cl.kibernumacademy.services.ContactManagerTest" time="0.023">
+    <error message="Unresolved compilation problem: &#10;	The method eliminarContactoPorEmail(String) is undefined for the type ContactManager&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	The method eliminarContactoPorEmail(String) is undefined for the type ContactManager
+
+	at cl.kibernumacademy.services.ContactManagerTest.eliminarContactoPorEmail_debeEliminarElContactoConEmailDado(ContactManagerTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="agregarContacto_debeAgregarUnContactoALaLista" classname="cl.kibernumacademy.services.ContactManagerTest" time="0.006"/>
 </testsuite>

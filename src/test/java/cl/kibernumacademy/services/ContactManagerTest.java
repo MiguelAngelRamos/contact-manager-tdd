@@ -25,4 +25,21 @@ public class ContactManagerTest {
     assertThat(contactManager.obtenerContactos(), hasSize(1));
     assertThat(contactManager.obtenerContactos().get(0).getNombre(), is("Sofia"));
   }
+
+  @Test
+  void eliminarContactoPorEmail_debeEliminarElContactoConEmailDado() {
+    // Se espera que exista una clase ContactManager con un método agregarContacto
+    ContactManager contactManager = new ContactManager();
+    // Se espera que exista una clase Contact con un constructor que reciba nombre, numero telefono y correo electronico
+    Contact contacto = new Contact("Sofia", "055-9491091940", "sofia@correo.cl");
+
+     // Se espera que la instancia pueda acceder al metodo agregarContacto y que añada el contacto en una lista interna
+    contactManager.agregarContacto(contacto);
+
+    // Se espera que exista un método llamado eliminarContactoPorEmail, que elimine contacto
+    contactManager.eliminarContactoPorEmail("sofia@correo.cl");
+
+    assertThat(contactManager.obtenerContactos(), hasSize(0));
+
+  }
 }
